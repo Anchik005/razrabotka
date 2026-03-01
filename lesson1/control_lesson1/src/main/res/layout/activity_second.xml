@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New life for mirea activity!"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="ПЕРВАЯ КНОПКА"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#666666"
+        app:cornerRadius="3dp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="ВТОРАЯ КНОПКА"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#666666"
+        app:cornerRadius="3dp" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="ТРЕТЬЯ КНОПКА"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#666666"
+        app:cornerRadius="3dp" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="ЧЕТВЁРТАЯ КНОПКА"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#666666"
+        app:cornerRadius="3dp" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="ПЯТАЯ КНОПКА"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#666666"
+        app:cornerRadius="3dp" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="ШЕСТАЯ КНОПКА"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#666666"
+        app:cornerRadius="3dp" />
+
+</LinearLayout>
