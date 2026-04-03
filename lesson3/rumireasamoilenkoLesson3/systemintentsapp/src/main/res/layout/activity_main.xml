@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/buttonCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Позвонить"
+        android:onClick="onClickCall"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonBrowser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Открыть браузер"
+        android:onClick="onClickOpenBrowser"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Открыть карту"
+        android:onClick="onClickOpenMaps" />
+</LinearLayout>
