@@ -1,0 +1,78 @@
+package ru.mirea.samoilenko.mireaproject;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+
+import android.os.Bundle;
+import android.widget.Button;
+
+public class MainActivity extends AppCompatActivity {
+
+    private DrawerLayout drawerLayout;
+    private Button buttonMenu;
+    private Button btnData;
+    private Button btnWeb;
+    private Button btnBackground;
+    private Button btnProfile;
+    private Button btnFileWork;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        drawerLayout = findViewById(R.id.drawer_layout);
+        buttonMenu = findViewById(R.id.buttonMenu);
+        btnData = findViewById(R.id.btnData);
+        btnWeb = findViewById(R.id.btnWeb);
+        btnBackground = findViewById(R.id.btnBackground);
+        btnProfile = findViewById(R.id.btnProfile);
+        btnFileWork = findViewById(R.id.btnFileWork);
+
+        // кнопка открытия бокового меню
+        buttonMenu.setOnClickListener(v ->
+                drawerLayout.openDrawer(GravityCompat.START)
+        );
+
+        btnBackground.setOnClickListener(v -> {
+            openFragment(new BackgroundTaskFragment());
+            drawerLayout.closeDrawer(GravityCompat.START);
+        });
+
+        // DataFragment
+        if (savedInstanceState == null) {
+            openFragment(new DataFragment());
+        }
+
+        // пункт меню DataFragment
+        btnData.setOnClickListener(v -> {
+            openFragment(new DataFragment());
+            drawerLayout.closeDrawer(GravityCompat.START);
+        });
+
+        // пункт меню WebViewFragment
+        btnWeb.setOnClickListener(v -> {
+            openFragment(new WebViewFragment());
+            drawerLayout.closeDrawer(GravityCompat.START);
+        });
+
+        btnProfile.setOnClickListener(v -> {
+            openFragment(new ProfileFragment());
+            drawerLayout.closeDrawer(GravityCompat.START);
+        });
+
+        btnFileWork.setOnClickListener(v -> {
+            openFragment(new FileWorkFragment());
+            drawerLayout.closeDrawer(GravityCompat.START);
+        });
+    }
+
+    private void openFragment(Fragment fragment) {
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragment_container, fragment)
+                .commit();
+    }
+}

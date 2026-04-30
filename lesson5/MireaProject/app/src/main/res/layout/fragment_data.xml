@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Кибербезопасность"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Кибербезопасность — это область информационных технологий, которая занимается защитой компьютеров, сетей, программ и данных от несанкционированного доступа, атак и повреждений."
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Основные направления кибербезопасности: защита сетевой инфраструктуры, криптография, защита веб-приложений, анализ уязвимостей, реагирование на инциденты и безопасность мобильных приложений."
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сегодня кибербезопасность особенно важна для банков, государственных организаций, образовательных учреждений и крупных IT-компаний."
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
