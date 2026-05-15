@@ -14,9 +14,6 @@ public interface HeroDao {
     @Query("SELECT * FROM hero")
     List<Hero> getAll();
 
-    @Query("SELECT * FROM hero WHERE id = :id")
-    Hero getById(long id);
-
     @Insert
     void insert(Hero hero);
 

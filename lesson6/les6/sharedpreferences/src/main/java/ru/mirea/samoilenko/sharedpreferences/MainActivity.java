@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences preferences = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
 
         editTextGroup.setText(preferences.getString(KEY_GROUP, "БСБО-08-23"));
-        editTextNumber.setText(String.valueOf(preferences.getInt(KEY_NUMBER, 15)));
+        editTextNumber.setText(String.valueOf(preferences.getInt(KEY_NUMBER, 23)));
         editTextMovie.setText(preferences.getString(KEY_MOVIE, ""));
 
         buttonSave.setOnClickListener(v -> {

@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Основной контент -->
+    <!-- основной контент -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- Панель с кнопкой для открытия меню и заголовком -->
+        <!-- панель с кнопкой для открытия меню и заголовком -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

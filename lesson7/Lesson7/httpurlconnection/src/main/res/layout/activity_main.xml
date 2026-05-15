@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="48dp">
+
+        <TextView
+            android:id="@+id/studentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Samoilenko, БСБО-08-23, №23"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="HttpURLConnection"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonLoad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Определить IP и погоду" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Статус: ожидание" />
+
+        <TextView
+            android:id="@+id/ipTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IP: —" />
+
+        <TextView
+            android:id="@+id/cityTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Город: —" />
+
+        <TextView
+            android:id="@+id/regionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Регион: —" />
+
+        <TextView
+            android:id="@+id/countryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Страна: —" />
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Координаты: —" />
+
+        <TextView
+            android:id="@+id/orgTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Провайдер: —" />
+
+        <TextView
+            android:id="@+id/timezoneTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Часовой пояс: —" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Погода Open-Meteo"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/weatherTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Погода: —" />
+
+    </LinearLayout>
+</ScrollView>
