@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- основной контент -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- панель с кнопкой для открытия меню и заголовком -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6200EE"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingTop="40dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp">
+
+            <Button
+                android:id="@+id/buttonMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="☰" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="MireaProject"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!-- боковое меню -->
+    <ScrollView
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/drawer_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Меню"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Профиль" />
+
+            <Button
+                android:id="@+id/btnFileWork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Файлы" />
+
+            <Button
+                android:id="@+id/btnData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Данные" />
+
+            <Button
+                android:id="@+id/btnNetwork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сетевой ресурс" />
+
+            <Button
+                android:id="@+id/btnWeb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ВебВью" />
+
+            <Button
+                android:id="@+id/btnBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Фоновая Задача" />
+
+            <Button
+                android:id="@+id/btnSensor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Датчики" />
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Камера" />
+
+            <Button
+                android:id="@+id/btnMicrophone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Микрофон" />
+
+            <Button
+                android:id="@+id/btnPlaces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Заведения" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
